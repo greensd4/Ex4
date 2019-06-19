@@ -41,8 +41,8 @@ func get_image_from_album_handler(writer http.ResponseWriter, request *http.Requ
 }
 
 func main() {
-	http.HandleFunc("/addImage", add_new_Image_handler)
 	http.HandleFunc("/createAlbum", create_new_album_handler)
+	http.HandleFunc("/addImage", add_new_Image_handler)
 	http.HandleFunc("/getImage", get_image_from_album_handler)
 
 	fmt.Println("Start C2G Server..")
