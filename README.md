@@ -2,13 +2,13 @@
 
 # API
 
-## localhost:23456/createAlbum
+## localhost:30000/createAlbum
 ## Body:
       { 
         "Creator": string,
         "AlbumName": string
       }
-## localhost:23456/addImage
+## localhost:30000/addImage
 ### Body:
       { 
         "ImageName": string,
@@ -16,7 +16,7 @@
         "ImageData": byte[]
       }
 
-## localhost:23456/getImage
+## localhost:30000/getImage
 ### Body:
       { 
         "ImageName": string,
