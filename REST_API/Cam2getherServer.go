@@ -46,7 +46,7 @@ func main() {
 	http.HandleFunc("/getImage", get_image_from_album_handler)
 
 	fmt.Println("Start C2G Server..")
-	if err := http.ListenAndServe(":3000", nil); err != nil {
+	if err := http.ListenAndServe(":30000", nil); err != nil {
 		panic(err)
 	}
 }
